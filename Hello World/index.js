@@ -27,7 +27,7 @@ var {MongoClient} = require('mongodb');
 
 
 async function main(){
-    const uri = "mongodb+srv://angel012912:Niupi700M@cluster0.44hmnak.mongodb.net/?retryWrites=true&w=majority";
+    const uri = "mongodb://127.0.0.1:27017/test";
     const client = new MongoClient(uri);
     try{
         await client.connect();
